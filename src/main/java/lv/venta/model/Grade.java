@@ -21,10 +21,12 @@ public class Grade {
     @Max(10)
     private int gradeValue;
 
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "studentId")
     private Student student;
 
+    @NotNull
     @ManyToOne
     @JoinColumn(name="courseId")
     private Course course;
